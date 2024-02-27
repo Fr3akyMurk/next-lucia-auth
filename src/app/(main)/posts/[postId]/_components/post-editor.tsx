@@ -24,9 +24,13 @@ import Link from "next/link";
 
 const markdownlink = "https://remarkjs.github.io/react-markdown/" // Can also be changed for something like /markdown
 
+type usertype = {
+  id: string;
+}
+
 interface Props {
   post: RouterOutputs["post"]["get"];
-  user: any;
+  user: usertype;
 }
 
 const schema = z.object({
