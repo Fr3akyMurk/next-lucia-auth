@@ -44,7 +44,7 @@ export const PostCard = ({
       <CardContent className="line-clamp-3 text-sm">{post.excerpt}</CardContent>
       <CardFooter className="flex-row-reverse gap-2">
         <Button variant="secondary" size="sm" asChild>
-          <Link href={`/editor/${post.id}`}>
+          <Link href={`/${post.id}`}>
             <EyeOpenIcon className="mr-1 h-4 w-4" />
             <span>View</span>
           </Link>
