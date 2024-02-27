@@ -1,6 +1,6 @@
 "use client";
 
-import { EyeOpenIcon, TrashIcon } from "@/components/icons";
+import { EyeOpenIcon } from "@/components/icons";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -27,7 +27,6 @@ interface PostCardProps {
 export const PostCard = ({
   post,
   userName,
-  setOptimisticPosts,
 }: PostCardProps) => {
 
   return (

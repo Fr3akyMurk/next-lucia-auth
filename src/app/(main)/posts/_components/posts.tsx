@@ -2,7 +2,6 @@
 
 import { type RouterOutputs } from "@/trpc/shared";
 import * as React from "react";
-import { NewPost } from "./new-post";
 import { PostCard } from "./post-card";
 
 interface PostsProps {
@@ -14,7 +13,7 @@ export function Posts({ promises }: PostsProps) {
    * use is a React Hook that lets you read the value of a resource like a Promise or context.
    * @see https://react.dev/reference/react/use
    */
-  const [posts, subscriptionPlan] = React.use(promises);
+  const [posts] = React.use(promises);
 
   /**
    * useOptimistic is a React Hook that lets you show a different state while an async action is underway.
