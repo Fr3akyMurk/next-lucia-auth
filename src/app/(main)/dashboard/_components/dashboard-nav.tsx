@@ -8,11 +8,10 @@ import { cn } from "@/lib/utils";
 
 const items = [
   {
-    title: "Posts",
+    title: "Dashboard",
     href: "/dashboard",
     icon: FileTextIcon,
   },
-
   {
     title: "Billing",
     href: "/dashboard/billing",
@@ -21,6 +20,11 @@ const items = [
   {
     title: "Settings",
     href: "/dashboard/settings",
+    icon: GearIcon,
+  },
+  {
+    title: "Posts",
+    href: "/posts",
     icon: GearIcon,
   },
 ];
