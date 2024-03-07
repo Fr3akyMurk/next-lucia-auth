@@ -19,7 +19,7 @@ const schema = z.object({
     .max(2048 * 2),
 });
 
-export const PostEditor = ({ post }: Props) => {
+export const PostViewer = ({ post }: Props) => {
   if (!post) return null;
   if (post.status !== "published") return notFound();
   const form = useForm({

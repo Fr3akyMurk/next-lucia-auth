@@ -1,7 +1,7 @@
 import React from "react";
 import { api } from "@/trpc/server";
 import { notFound, redirect } from "next/navigation";
-import { PostEditor } from "./_components/post-viewer";
+import { PostViewer } from "./_components/post-viewer";
 import { ArrowLeftIcon } from "@/components/icons";
 import Link from "next/link";
 import { validateRequest } from "@/lib/auth/validate-request";
@@ -29,7 +29,7 @@ export default async function EditPostPage({ params }: Props) {
         <ArrowLeftIcon className="h-5 w-5" /> back to dashboard
       </Link>
 
-      <PostEditor post={post} />
+      <PostViewer post={post} />
     </main>
   );
 }
